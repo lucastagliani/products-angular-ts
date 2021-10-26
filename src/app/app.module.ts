@@ -8,10 +8,13 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav'
+import { MatIconModule } from '@angular/material/icon'
+import { MatToolbarModule } from '@angular/material/toolbar'
 
 import { SidenavOverviewExample } from './sidenav-overview-example/sidenav-overview-example'; 
 import { SidenavPositionExample } from './sidenav-position-example/sidenav-position-example'; 
 import { SidenavOpenCloseExample } from './sidenav-open-close-example/sidenav-open-close-example'; 
+import { ToolbarOverviewExample } from './toolbar-overview-example/toolbar-overview-example'; 
 
 @NgModule({
   imports: [
@@ -21,7 +24,9 @@ import { SidenavOpenCloseExample } from './sidenav-open-close-example/sidenav-op
       { path: '', component: ProductListComponent },
     ]),
     BrowserAnimationsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatIconModule,
+    MatToolbarModule
   ],
   declarations: [
     AppComponent,
@@ -29,7 +34,8 @@ import { SidenavOpenCloseExample } from './sidenav-open-close-example/sidenav-op
     ProductListComponent,
     SidenavOverviewExample,
     SidenavPositionExample,
-    SidenavOpenCloseExample
+    SidenavOpenCloseExample,
+    ToolbarOverviewExample
   ],
   bootstrap: [
     AppComponent
